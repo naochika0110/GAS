@@ -22,7 +22,7 @@ function myFunctiontodo() {
   body_mid = "";
   body_low = "";
   
-  url = "https://todoist.com/API/v7/sync/?token=" + todoist["APItoken"] + "&sync_token=%27*%27&resource_types=[%22items%22]"
+  url = "https://todoist.com/API/v8/sync/?token=" + todoist["APItoken"] + "&sync_token=%27*%27&resource_types=[%22items%22]"
   result = UrlFetchApp.fetch(url);
   
   var json = JSON.parse(result.getContentText());
